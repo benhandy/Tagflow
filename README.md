@@ -6,7 +6,8 @@ An AI-powered document annotation tool built with FastAPI and React.
 
 ## project structure 
 
-annotation_tool/
+"""
+ annotation_tool/
 ├── backend/ # FastAPI backend
 │ ├── api/ # API endpoints
 │ ├── core/ # Core configurations
@@ -15,7 +16,7 @@ annotation_tool/
 └── front/ # React frontend
 └── src/ # Source files
 
-
+"""
 
 ## Setup:
 
