@@ -84,7 +84,7 @@ Contributions are welcome. If you'd like to contribute to TagFlow, please follow
 4. Submit a pull request.
 
 ### License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ### Contact
 For questions or feedback, please reach out to:  benhandy9@gmail.com.
