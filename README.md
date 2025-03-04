@@ -73,7 +73,7 @@ npm run dev
 
 
 ### Contributing
-We welcome contributions! If you'd like to contribute to TagFlow, please follow these steps:
+Contributions are welcome. If you'd like to contribute to TagFlow, please follow these steps:
 
 Fork the repository.
 
