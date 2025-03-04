@@ -70,3 +70,22 @@ npm run dev
 
 ### AI Integration
 - **OpenAI GPT**: Natural language processing for annotation suggestions
+
+
+### Contributing
+We welcome contributions! If you'd like to contribute to TagFlow, please follow these steps:
+
+Fork the repository.
+
+Create a new branch for your feature or bugfix.
+
+Commit your changes.
+
+Submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Contact
+For questions or feedback, please reach out to benhandy9@gmail.com.
+
