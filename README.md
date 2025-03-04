@@ -75,17 +75,17 @@ npm run dev
 ### Contributing
 Contributions are welcome. If you'd like to contribute to TagFlow, please follow these steps:
 
-Fork the repository.
+1. Fork the repository.
 
-Create a new branch for your feature or bugfix.
+2. Create a new branch for your feature or bugfix.
 
-Commit your changes.
+3. Commit your changes.
 
-Submit a pull request.
+4. Submit a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+### License
+This project is licensed under the MIT License.
 
 ### Contact
-For questions or feedback, please reach out to benhandy9@gmail.com.
+For questions or feedback, please reach out to:  benhandy9@gmail.com.
 
