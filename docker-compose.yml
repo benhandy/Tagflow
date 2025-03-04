@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./back
+    ports:
+      - "8000:8000"
+    env_file: ./back/.env
+    depends_on:
+      - db
+      - redis
+    deploy:
+      replicas: 3
+
+  worker:
+    build: ./back
+    command: celery -A tasks.worker worker --loglevel=info
+    env_file: ./back/.env
+    depends_on:
+      - redis
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: tagflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data: 
