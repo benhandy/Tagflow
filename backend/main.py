@@ -91,7 +91,7 @@ async def annotate_document(
         db.add(document)
         await db.flush()
 
-        # get annotations from OpenAI
+        # get annotations from openai
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
