@@ -1,4 +1,4 @@
-# Need to add base CRUD operations
+# need to add base CRUD operations
 from typing import Generic, TypeVar, Type
 from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
