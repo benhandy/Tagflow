@@ -21,7 +21,7 @@ from core.middleware import error_handler
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Setup logging
+# setup logging
 setup_logging()
 
 app = FastAPI(
@@ -29,7 +29,7 @@ app = FastAPI(
     version=settings.VERSION
 )
 
-# Add CORS middleware
+# add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.BACKEND_CORS_ORIGINS,
@@ -38,7 +38,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Add error handling middleware
+# add error handling middleware
 @app.middleware("http")
 async def middleware(request: Request, call_next):
     return await error_handler(request, call_next)
