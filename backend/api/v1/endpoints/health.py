@@ -15,13 +15,13 @@ async def health_check(db: AsyncSession = Depends(get_db)):
     }
     
     try:
-        # Check database
+        # check database
         await db.execute("SELECT 1")
     except Exception:
         checks["database"] = False
     
     try:
-        # Check cache
+        # check cache
         cache = CacheService()
         await cache.set("health_check", "ok")
     except Exception:
